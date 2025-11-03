@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class PlusIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<PlusIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<PlusIcon, "PlusIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { PlusIcon };

@@ -1,0 +1,9 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class AngleDoubleLeftIcon extends BaseIcon {
+    static ɵfac: i0.ɵɵFactoryDeclaration<AngleDoubleLeftIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<AngleDoubleLeftIcon, "AngleDoubleLeftIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { AngleDoubleLeftIcon };

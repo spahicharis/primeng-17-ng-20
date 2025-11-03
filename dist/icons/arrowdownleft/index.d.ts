@@ -1,0 +1,9 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class ArrowDownLeftIcon extends BaseIcon {
+    static ɵfac: i0.ɵɵFactoryDeclaration<ArrowDownLeftIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ArrowDownLeftIcon, "ArrowDownLeftIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { ArrowDownLeftIcon };

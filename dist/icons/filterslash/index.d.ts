@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class FilterSlashIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<FilterSlashIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<FilterSlashIcon, "FilterSlashIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { FilterSlashIcon };

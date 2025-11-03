@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class StarFillIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<StarFillIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<StarFillIcon, "StarFillIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { StarFillIcon };

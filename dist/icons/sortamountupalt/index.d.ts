@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class SortAmountUpAltIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<SortAmountUpAltIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<SortAmountUpAltIcon, "SortAmountUpAltIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { SortAmountUpAltIcon };

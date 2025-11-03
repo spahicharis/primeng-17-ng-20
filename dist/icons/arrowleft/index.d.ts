@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class ArrowLeftIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ArrowLeftIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ArrowLeftIcon, "ArrowLeftIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { ArrowLeftIcon };

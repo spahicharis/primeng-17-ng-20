@@ -1,0 +1,11 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class WindowMinimizeIcon extends BaseIcon {
+    pathId: string;
+    ngOnInit(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<WindowMinimizeIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<WindowMinimizeIcon, "WindowMinimizeIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { WindowMinimizeIcon };

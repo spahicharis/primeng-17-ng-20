@@ -1,0 +1,9 @@
+import { BaseIcon } from 'primeng/baseicon';
+import * as i0 from '@angular/core';
+
+declare class EyeIcon extends BaseIcon {
+    static ɵfac: i0.ɵɵFactoryDeclaration<EyeIcon, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EyeIcon, "EyeIcon", never, {}, {}, never, never, true, never>;
+}
+
+export { EyeIcon };
