@@ -159,7 +159,7 @@ export class MenuItemContent {
               (keydown)="onListKeyDown($event)"
               >
               @for (submenu of model; track submenu; let i = $index) {
-                <ng-template let-submenu let-i="index" [ngForOf]="model" *ngIf="hasSubMenu()">
+                <ng-template let-submenu let-i="index" ngFor [ngForOf]="model" *ngIf="hasSubMenu()">
                   @if (submenu.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': submenu.visible === false }" role="separator"></li>
                   }
@@ -211,7 +211,7 @@ export class MenuItemContent {
                 </ng-template>
               }
               @for (item of model; track item; let i = $index) {
-                <ng-template let-item let-i="index" [ngForOf]="model" *ngIf="!hasSubMenu()">
+                <ng-template let-item let-i="index" ngFor [ngForOf]="model" *ngIf="!hasSubMenu()">
                   @if (item.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': item.visible === false }" role="separator"></li>
                   }

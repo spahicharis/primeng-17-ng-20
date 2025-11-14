@@ -717,7 +717,7 @@ class Menu {
               (keydown)="onListKeyDown($event)"
               >
               @for (submenu of model; track submenu; let i = $index) {
-                <ng-template let-submenu let-i="index" [ngForOf]="model" *ngIf="hasSubMenu()">
+                <ng-template let-submenu let-i="index" ngFor [ngForOf]="model" *ngIf="hasSubMenu()">
                   @if (submenu.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': submenu.visible === false }" role="separator"></li>
                   }
@@ -769,7 +769,7 @@ class Menu {
                 </ng-template>
               }
               @for (item of model; track item; let i = $index) {
-                <ng-template let-item let-i="index" [ngForOf]="model" *ngIf="!hasSubMenu()">
+                <ng-template let-item let-i="index" ngFor [ngForOf]="model" *ngIf="!hasSubMenu()">
                   @if (item.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': item.visible === false }" role="separator"></li>
                   }
@@ -803,7 +803,7 @@ class Menu {
             }
           </div>
         }
-        `, isInline: true, styles: ["@layer primeng{.p-menu-overlay{position:absolute;top:0;left:0}.p-menu ul{margin:0;padding:0;list-style:none}.p-menu .p-submenu-header{align-items:center}.p-menu .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-menu .p-menuitem-text{line-height:1}}\n"], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1.NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }, { kind: "directive", type: i1.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { kind: "directive", type: i4.Tooltip, selector: "[pTooltip]", inputs: ["tooltipPosition", "tooltipEvent", "appendTo", "positionStyle", "tooltipStyleClass", "tooltipZIndex", "escape", "showDelay", "hideDelay", "life", "positionTop", "positionLeft", "autoHide", "fitContent", "hideOnEscape", "pTooltip", "tooltipDisabled", "tooltipOptions"] }, { kind: "component", type: MenuItemContent, selector: "[pMenuItemContent]", inputs: ["pMenuItemContent", "itemTemplate"], outputs: ["onMenuItemClick"] }, { kind: "pipe", type: SafeHtmlPipe, name: "safeHtml" }], animations: [trigger('overlayAnimation', [transition(':enter', [style({ opacity: 0, transform: 'scaleY(0.8)' }), animate('{{showTransitionParams}}')]), transition(':leave', [animate('{{hideTransitionParams}}', style({ opacity: 0 }))])])], changeDetection: i0.ChangeDetectionStrategy.OnPush, encapsulation: i0.ViewEncapsulation.None });
+        `, isInline: true, styles: ["@layer primeng{.p-menu-overlay{position:absolute;top:0;left:0}.p-menu ul{margin:0;padding:0;list-style:none}.p-menu .p-submenu-header{align-items:center}.p-menu .p-menuitem-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative}.p-menu .p-menuitem-text{line-height:1}}\n"], dependencies: [{ kind: "directive", type: i1.NgClass, selector: "[ngClass]", inputs: ["class", "ngClass"] }, { kind: "directive", type: i1.NgForOf, selector: "[ngFor][ngForOf]", inputs: ["ngForOf", "ngForTrackBy", "ngForTemplate"] }, { kind: "directive", type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }, { kind: "directive", type: i1.NgTemplateOutlet, selector: "[ngTemplateOutlet]", inputs: ["ngTemplateOutletContext", "ngTemplateOutlet", "ngTemplateOutletInjector"] }, { kind: "directive", type: i1.NgStyle, selector: "[ngStyle]", inputs: ["ngStyle"] }, { kind: "directive", type: i4.Tooltip, selector: "[pTooltip]", inputs: ["tooltipPosition", "tooltipEvent", "appendTo", "positionStyle", "tooltipStyleClass", "tooltipZIndex", "escape", "showDelay", "hideDelay", "life", "positionTop", "positionLeft", "autoHide", "fitContent", "hideOnEscape", "pTooltip", "tooltipDisabled", "tooltipOptions"] }, { kind: "component", type: MenuItemContent, selector: "[pMenuItemContent]", inputs: ["pMenuItemContent", "itemTemplate"], outputs: ["onMenuItemClick"] }, { kind: "pipe", type: SafeHtmlPipe, name: "safeHtml" }], animations: [trigger('overlayAnimation', [transition(':enter', [style({ opacity: 0, transform: 'scaleY(0.8)' }), animate('{{showTransitionParams}}')]), transition(':leave', [animate('{{hideTransitionParams}}', style({ opacity: 0 }))])])], changeDetection: i0.ChangeDetectionStrategy.OnPush, encapsulation: i0.ViewEncapsulation.None });
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.9", ngImport: i0, type: Menu, decorators: [{
             type: Component,
@@ -842,7 +842,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.9", ngImpor
               (keydown)="onListKeyDown($event)"
               >
               @for (submenu of model; track submenu; let i = $index) {
-                <ng-template let-submenu let-i="index" [ngForOf]="model" *ngIf="hasSubMenu()">
+                <ng-template let-submenu let-i="index" ngFor [ngForOf]="model" *ngIf="hasSubMenu()">
                   @if (submenu.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': submenu.visible === false }" role="separator"></li>
                   }
@@ -894,7 +894,7 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "20.3.9", ngImpor
                 </ng-template>
               }
               @for (item of model; track item; let i = $index) {
-                <ng-template let-item let-i="index" [ngForOf]="model" *ngIf="!hasSubMenu()">
+                <ng-template let-item let-i="index" ngFor [ngForOf]="model" *ngIf="!hasSubMenu()">
                   @if (item.separator) {
                     <li class="p-menuitem-separator" [ngClass]="{ 'p-hidden': item.visible === false }" role="separator"></li>
                   }
