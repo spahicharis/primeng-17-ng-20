@@ -9,4 +9,8 @@
 ### Website
 Visit the [PrimeNG Website](https://primeng.org) for general information, demos and documentation.
 
+### NPM Package
 
+To zip the built package, run the following command from the `primeng` folder:
+
+tar -czf primeng-17.20.x.tgz -C dist .
